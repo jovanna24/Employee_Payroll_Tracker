@@ -45,6 +45,8 @@ const getRandomEmployee = function(employeesArray) {
   employeesArray[Math.floor(Math.random()*employeesArray.length)];
 }
 
+console.log(`Congratulations to ${getRandomEmployee}, our random drawing winner!`);
+
 
 /*
   ====================
