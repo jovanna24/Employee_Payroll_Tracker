@@ -1,4 +1,6 @@
 // Get a reference to the #add-employees-btn element
+console.log('Im loaded');
+
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
@@ -6,14 +8,16 @@ let employeesArray = [];
 
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-  while(addNewEe = true); 
+  let addNewEe= true;
+
+  while(addNewEe) {
   let firstName = prompt('Please enter first name.'); 
   let lastName = prompt('Please input your last name.'); 
   let salary= prompt('Please enter salary.'); 
   if (isNaN(salary)) {
     return 'Not a Number!';
   }
-  prompt('Would you like to add a new employee?'); 
+  addNewEe= prompt('Would you like to add a new employee?'); 
   if (!addNewEe) {
     return;
   } 
@@ -23,6 +27,7 @@ const collectEmployees = function() {
     salary: Math.ceil(salary)
   }; 
   employeesArray.push(newObject);
+}
 }
 collectEmployees(); 
 
